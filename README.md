@@ -1,2 +1,2 @@
-# jquery-oimage
-a jquery plugin for image
+# 说明
+ oImage

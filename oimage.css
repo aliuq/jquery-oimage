@@ -1,0 +1,133 @@
+.OI {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.OI button{
+    padding: 0;
+    margin: 0;
+}
+
+.OI_shade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+    color: #ffffff;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 99990;
+}
+
+.OI_operate .c {
+    position: absolute;
+    bottom: 30px;
+    width: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99992;
+    font-size: 0;
+}
+
+.OI_operate .l, .OI_operate .r {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    margin-top: -25px;
+    z-index: 99992;
+}
+
+.OI_operate .l {
+    left: 30px;
+}
+
+.OI_operate .r {
+    right: 30px;
+}
+
+.OI_operate img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: move;
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 99991;
+}
+
+.OI_operate .rt.OI_btn.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99992;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.OI_operate .btn.OI_page{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #292929;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.OI_operate .btn.OI_page i {
+    vertical-align: middle;
+}
+
+.OI_operate .btn.OI_page.active, .OI_operate .btn.OI_page:hover {
+    background: #4ea0f4;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -ms-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+.OI_operate .btn.OI_btn {
+    padding: 0;
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #181818;
+    color: #FFFFFF;
+    border: none;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.OI_operate .btn.OI_btn:hover:before, .btn.OI_btn.active:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #303030;
+    z-index: -9;
+}
+
+.OI_operate .btn.OI_btn i {
+    font-size: 20px;
+    vertical-align: middle;
+}

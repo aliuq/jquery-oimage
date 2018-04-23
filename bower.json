@@ -1,0 +1,21 @@
+{
+  "name": "jquery-oimage",
+  "description": "a jquery plugin for image",
+  "main": "oimage.js",
+  "keywords": [
+    "jquery",
+    "image"
+  ],
+  "authors": [
+    "linka"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

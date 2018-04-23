@@ -1,0 +1,15 @@
+{
+  "name": "jquery-oimage",
+  "version": "1.0.0",
+  "description": "a jquery plugin for image",
+  "main": "oimage",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "image"
+  ],
+  "author": "liuqian1996",
+  "license": "ISC"
+}
