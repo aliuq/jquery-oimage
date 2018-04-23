@@ -45,13 +45,13 @@
     function listImage(option) {
         option = option || {}
         var thissrc = $(this).attr('src') || $(this).find('img').attr('src')
-        var index = $(this).index() >= 0 ? $(this).index() : $(this).find('img').index() >= 0 ? $(this).find('img').index() : 0;
+        var index1 = $(this).index() >= 0 ? $(this).index() : $(this).find('img').index() >= 0 ? $(this).find('img').index() : 0;
         var s = '',
             img, src, shade, index, rotatedeg = 0,
             scalepercent = 1,
             el = option.el ? $(option.el) : EL.length > 0 ? EL : top.$('body'),
             l = option.list || [],
-            n = option.index || index,
+            n = option.index || index1,
             d = option.default || '';
         
         renderTpl(el, listHtmlTemp, {
@@ -147,7 +147,7 @@
             el.find('.OI_page').on('click', function (e) {
                 resize();
                 if ($(this).hasClass('l')) {
-                    if (index <= 1) {
+                    if (index <= 0) {
                         return false;
                     }
                     index = index - 1;
@@ -158,7 +158,7 @@
                     }
                     index = index + 1;
                 }
-                $(img).attr('src', l[index - 1]).attr('data-index', index);
+                $(img).attr('src', l[index]).attr('data-index', index);
             })
         }
         //取消遮罩
