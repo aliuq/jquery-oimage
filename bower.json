@@ -5,13 +5,13 @@
   "authors": [
     "liuqian1996"
   ],
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "ISC",
   "keywords": [
     "jquery",
     "image"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/liuqian1996/jquery-oimage",
   "ignore": [
     "**/.*",
     "node_modules",

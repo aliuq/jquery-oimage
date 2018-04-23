@@ -1,10 +1,14 @@
 {
   "name": "jquery-oimage",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "a jquery plugin for image",
   "main": "oimage",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuqian1996/jquery-oimage.git"
   },
   "keywords": [
     "jquery",

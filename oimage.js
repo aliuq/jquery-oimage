@@ -426,6 +426,22 @@
         return $(this);
     }
 
+
+    // listImage({
+    //     list: [
+    //         {
+    //             src: '/uploads/clouds/20180126/9ebffa0b9a78f43f55f2fa262e2e97f2.png'
+    //         }, {
+    //             src: '/uploads/clouds/20180126/32cba135013476a9d319db4dcb349444.png'
+    //         },{
+    //             src: '/uploads/clouds/20180202/e3ea14bd28a88e7671cec07d601bccad.jpg'
+    //         },{
+    //             src: '/uploads/clouds/20180126/d64e95b352b9c14573c00b09217a22cc.png'
+    //         },
+    //     ]
+    // })
+
+
     $.fn.listImage = listImage;
     $.fn.bigImage = BigImage;
     $.fn.move = Move;
