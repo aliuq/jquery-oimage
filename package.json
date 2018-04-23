@@ -1,6 +1,6 @@
 {
   "name": "jquery-oimage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a jquery plugin for image",
   "main": "oimage",
   "scripts": {
