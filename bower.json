@@ -1,16 +1,16 @@
 {
   "name": "jquery-oimage",
   "description": "a jquery plugin for image",
-  "main": "oimage.js",
+  "main": "oimage",
+  "authors": [
+    "liuqian1996"
+  ],
+  "version": "1.0.0",
+  "license": "ISC",
   "keywords": [
     "jquery",
     "image"
   ],
-  "authors": [
-    "linka"
-  ],
-  "version": "1.0.0",
-  "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",

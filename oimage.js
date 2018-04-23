@@ -25,7 +25,7 @@
         return code.join(' ');
     }
 
-    var listHtmlTemp = '<div class="OI">' +
+    var listHtmlTemp = '<div class="OI" style="display:none">' +
         '           <div class="OI_shade"></div>' +
         '           <div class="OI_operate">' +
         '               <img class="OI_img" data-index="${index}" src="${src}" alt="">' +
@@ -44,18 +44,19 @@
 
     function listImage(option) {
         option = option || {}
-        var thissrc = $(this).attr('src')
+        var thissrc = $(this).attr('src') || $(this).find('img').attr('src')
+        var index = $(this).index() >= 0 ? $(this).index() : $(this).find('img').index() >= 0 ? $(this).find('img').index() : 0;
         var s = '',
             img, src, shade, index, rotatedeg = 0,
             scalepercent = 1,
             el = option.el ? $(option.el) : EL.length > 0 ? EL : top.$('body'),
             l = option.list || [],
-            n = option.index || 1,
+            n = option.index || index,
             d = option.default || '';
-
+        
         renderTpl(el, listHtmlTemp, {
             index: n,
-            src: l ? l[n - 1] : thissrc
+            src: l ? l[n] : thissrc
         });
 
         img = el.find('.OI_img');
@@ -219,7 +220,7 @@
         }
     }
 
-    var bigImageHtmlTemp = '<div class="OI">' +
+    var bigImageHtmlTemp = '<div class="OI" style="display:none">' +
         '           <div class="OI_shade"></div>' +
         '           <div class="OI_operate">' +
         '               <img class="OI_img" data-index="${index}" src="${src}" alt="">' +
@@ -249,20 +250,24 @@
     }
 
     function renderTpl(el, tpl, data) {
-
         if (el.has('head').length > 0) {
+            var elfmt = el.find('script[src*="oimage"]').eq(0).attr('src');
+            if (/(oimage.js)/.test(elfmt)) {
+                elfmt = elfmt.replace(RegExp.$1, 'oimage.css');
+            }
             if (el.find('head link[name="oimage"]').length === 0) {
-                el.find('head').append('<link rel="stylesheet" href="' + CSS + '">');
+                el.find('head').append('<link name="oimage" rel="stylesheet" href="' + elfmt + '">');
             }
         } else {
             var fmt = ELHEAD.find('script[src*="oimage"]').eq(0).attr('src')
             if (/(oimage.js)/.test(fmt)) {
-                fmt = fmt.replace(RegExp.$1, '')
+                fmt = fmt.replace(RegExp.$1, 'oimage.css')
             }
             if (ELHEAD.find('link[name="oimage"]').length === 0) {
-                ELHEAD.append('<link rel="stylesheet" href="' + fmt + 'oimage.css">');
+                ELHEAD.append('<link rel="stylesheet" name="oimage" href="' + fmt + '">');
             }
         }
+
         el.css('overflow', 'hidden');
         var s = tpl.Render(data);
         if (el.find('.OI').length > 0) {
