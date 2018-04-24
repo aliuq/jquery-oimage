@@ -5,7 +5,6 @@
   "authors": [
     "liuqian1996"
   ],
-  "version": "1.0.5",
   "license": "ISC",
   "keywords": [
     "jquery",
@@ -18,5 +17,15 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "_release": "408d6efab7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "408d6efab7bd1958e499dfe39ff6c8adc071f4f8"
+  },
+  "_source": "https://github.com/liuqian1996/jquery-oimage.git",
+  "_target": "*",
+  "_originalSource": "jquery-oimage",
+  "_direct": true
 }
