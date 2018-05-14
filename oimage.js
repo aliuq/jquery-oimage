@@ -68,7 +68,7 @@
         //  旋转
         el.find('.OI_btn_rotate').on('click', function (e) {
             rotatedeg = (rotatedeg + 90) % 360;
-            $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).move().scroll({
+            $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).oMove().oScroll({
                 scalepercent: scalepercent,
                 rotatedeg: rotatedeg,
                 success: function (s, r) {
@@ -85,7 +85,7 @@
             if ($(this).hasClass('scaleR')) {
                 scalepercent = (scalepercent + 0.1) > 3 ? 3 : (scalepercent + 0.1);
             }
-            $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).move().scroll({
+            $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).oMove().oScroll({
                 scalepercent: scalepercent,
                 rotatedeg: rotatedeg,
                 success: function (s, r) {
@@ -100,7 +100,7 @@
         })
 
         // 图片移动 鼠标滚动缩放图片
-        $(el.find('.OI_img')).move().scroll({
+        $(el.find('.OI_img')).oMove().oScroll({
             scalepercent: scalepercent,
             rotatedeg: rotatedeg,
             success: function (s, r) {
@@ -117,7 +117,7 @@
                 if (eve.keyCode === 189) {
                     scalepercent = (scalepercent - 0.1) < 0.1 ? 0.1 : (scalepercent - 0.1);
                 }
-                $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).move().scroll({
+                $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).oMove().oScroll({
                     scalepercent: scalepercent,
                     rotatedeg: rotatedeg,
                     success: function (s, r) {
@@ -128,7 +128,7 @@
             }
             if (eve.ctrlKey && eve.keyCode === 40 && el.find('.OI_img').length > 0) {
                 rotatedeg = (rotatedeg + 90) % 360;
-                $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).move().scroll({
+                $(el.find('.OI_img')).css(transformCSS(scalepercent, rotatedeg)).oMove().oScroll({
                     scalepercent: scalepercent,
                     rotatedeg: rotatedeg,
                     success: function (s, r) {
@@ -213,7 +213,7 @@
                 /* Safari and Chrome */
                 '-o-transform': 'rotate(0deg) scale(1)',
                 /* Opera */
-            }).move().scroll(function (s, r) {
+            }).oMove().oScroll(function (s, r) {
                 scalepercent = s;
                 rotatedeg = r;
             });
@@ -239,7 +239,7 @@
             index: n,
             src: s
         });
-        $(el.find('.OI_img')).move().scroll();
+        $(el.find('.OI_img')).oMove().oScroll();
         //  取消遮罩
         el.find('.OI_shade,.btn-close').on('click', function (e) {
             e.stopPropagation();
@@ -303,7 +303,7 @@
                     /* Safari and Chrome */
                     '-o-transform': 'rotate(0deg) scale(1)',
                     /* Opera */
-                }).move().scroll();
+                }).oMove().oScroll();
             }
             //  翻页
             if (e.ctrlKey && (e.keyCode === 39 || e.keyCode === 37) && 　el.find('.OI_page').length > 0　) {
@@ -444,8 +444,8 @@
 
     $.fn.listImage = listImage;
     $.fn.bigImage = BigImage;
-    $.fn.move = Move;
-    $.fn.scroll = Scroll;
+    $.fn.oMove = Move;
+    $.fn.oScroll = Scroll;
     $.fn.Oimage = Oimage;
     return Oimage;
 

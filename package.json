@@ -1,19 +1,89 @@
 {
-  "name": "jquery-oimage",
-  "version": "1.0.5",
+  "_args": [
+    [
+      {
+        "raw": "jquery-oimage",
+        "scope": null,
+        "escapedName": "jquery-oimage",
+        "name": "jquery-oimage",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\try\\test"
+    ]
+  ],
+  "_from": "jquery-oimage@latest",
+  "_id": "jquery-oimage@1.0.5",
+  "_inCache": true,
+  "_location": "/jquery-oimage",
+  "_nodeVersion": "6.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/jquery-oimage_1.0.5_1524534924232_0.17491340774467834"
+  },
+  "_npmUser": {
+    "name": "linka",
+    "email": "lqadm@qq.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "jquery-oimage",
+    "scope": null,
+    "escapedName": "jquery-oimage",
+    "name": "jquery-oimage",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-oimage/-/jquery-oimage-1.0.5.tgz",
+  "_shasum": "683faa759beb39cacfa9159b258ef3d1c5340925",
+  "_shrinkwrap": null,
+  "_spec": "jquery-oimage",
+  "_where": "D:\\try\\test",
+  "author": {
+    "name": "liuqian1996"
+  },
+  "bugs": {
+    "url": "https://github.com/liuqian1996/jquery-oimage/issues"
+  },
+  "dependencies": {},
   "description": "a jquery plugin for image",
-  "main": "oimage",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "683faa759beb39cacfa9159b258ef3d1c5340925",
+    "tarball": "https://registry.npmjs.org/jquery-oimage/-/jquery-oimage-1.0.5.tgz",
+    "fileCount": 13,
+    "unpackedSize": 538764,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa3o6NCRA9TVsSAnZWagAASp0P/0/ye2NI3Jia/TRB7b0f\nExf7QmJG96XXTjLVF6EtXnY+ymeJz2S1yFDALHjpnrvI64P9r+2zNvXYCnYt\npQB5Pd0dhGjqpA6K7+2jRcqy7gv9qtt3pdpt6bh0KrPu7S2kBLTEIwWOlyrw\nWg6E4S6yz9RHyZUZWa4W2np9S1omr8kCcMzhFH4zEZRp6gVwP5FNlGqnq7pd\n4uheKkKfhUG5/auxOpPzxCCetm0en0Fur6nTtYLbVDUzmcjZBbkm7LeoxEy7\nCQYLn/6UdzbJRMrfGB4+YZJIaUJyLzKkHc52xGAXJpyBHDdbh97g4WFs27NM\ns4VVJ7oEsFXQf1pU7TR7GrjaXd0Tnhmf3BJK/VohJUlhP483vqVy/jcEnC/F\nfLRMqm0nNcoaR0OKrGhKZ4igYerK4oMJIm7FmH0D2fP2k2+jI3O/EMfgF61S\nEW4zi04MBgS8B+b82CLDIGp+DVOobo17SQNo63JQG6ySVkhzT+nlqQrveNB9\nuBmOOYFjajgK6vTHNbFWy/nemcDKz5M7kqgL3/YPR951LnhHK3cLeVqLABk4\nlMwM+H/tbqmKuMYdgTa5JxRyoUrx8AUXY/UdvD3j9y+2FJFa9Q4VBcW80X2p\nGIaJxCepx41Ap+zKFGlLqsuEHtQiVy8GUQRBt1Tcnl5WgfCVQm9y2RPxw5vj\nzpk5\r\n=B4au\r\n-----END PGP SIGNATURE-----\r\n"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/liuqian1996/jquery-oimage.git"
-  },
+  "homepage": "https://github.com/liuqian1996/jquery-oimage#readme",
   "keywords": [
     "jquery",
     "image"
   ],
-  "author": "liuqian1996",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "oimage",
+  "maintainers": [
+    {
+      "name": "linka",
+      "email": "lqadm@qq.com"
+    }
+  ],
+  "name": "jquery-oimage",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuqian1996/jquery-oimage.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.6"
 }
